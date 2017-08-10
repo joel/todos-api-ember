@@ -1,4 +1,4 @@
-import Ember from 'ember';
+// import Ember from 'ember';
 import DS from 'ember-data';
 
 export default DS.JSONAPISerializer.extend({
@@ -6,7 +6,7 @@ export default DS.JSONAPISerializer.extend({
   //   return Ember.String.underscore(attr);
   // },
 
-  serialize(snapshot, options) {
+  serialize() {
     let json = this._super(...arguments);
 
     // const util = require('util')
