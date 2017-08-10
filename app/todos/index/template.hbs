@@ -4,7 +4,7 @@
     <div class="col-md-4">
       {{#todo-item item=todo}}
         {{#link-to 'todos.edit' todo class='btn btn-success btn-xs'}}Edit{{/link-to}}
-        <button class="btn btn-danger btn-xs" {{action 'deleteLibrary' todo}}>Delete</button>
+        <button class="btn btn-danger btn-xs" {{action 'deleteTodo' todo}}>Delete</button>
       {{/todo-item}}
     </div>
   {{/each}}
