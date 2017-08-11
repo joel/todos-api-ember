@@ -4,4 +4,15 @@
   <li>
     {{model.todo.title}}
   </li>
+  <li>
+    {{model.todo.createdBy}}
+  </li>
+</ul>
+
+<h2>Items</h2>
+
+<ul>
+  {{#each model.todo.items as |item|}}
+    <li>{{item.name}}</li>
+  {{/each}}
 </ul>
