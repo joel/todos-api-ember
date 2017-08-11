@@ -12,9 +12,8 @@ Router.map(function() {
   this.route('todos', function() {
     this.route('new');
     this.route('edit', { path: '/:todo_id/edit' });
-    // this.route('show', { path: '/:todo_id/edit' });
+    this.route('show', { path: '/:todo_id' });
   });
-  this.route('todo', { path: '/todos/:todo_id' });
 });
 
 export default Router;

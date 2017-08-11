@@ -2,17 +2,17 @@
 
 <ul>
   <li>
-    {{model.todo.title}}
+    {{model.title}}
   </li>
   <li>
-    {{model.todo.createdBy}}
+    {{model.createdBy}}
   </li>
 </ul>
 
 <h2>Items</h2>
 
 <ul>
-  {{#each model.todo.items as |item|}}
+  {{#each model.items as |item|}}
     <li>{{item.name}}</li>
   {{/each}}
 </ul>
