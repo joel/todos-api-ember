@@ -12,7 +12,12 @@ Router.map(function() {
   this.route('todos', function() {
     this.route('new');
     this.route('edit', { path: '/:todo_id/edit' });
-    this.route('show', { path: '/:todo_id' });
+    this.route('show', { path: '/:todo_id' }, function() {
+      this.route('items', function() {
+        this.route('new', { path: '/new'} )
+      });
+    });
+    
   });
 });
 
